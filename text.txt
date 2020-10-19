@@ -1,3 +1,0 @@
-mongo "mongodb+srv://myfirstcluster.u7xp6.mongodb.net/<dbname>" --username JosefinE7
-
-<dbname> = myTestDB
