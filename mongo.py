@@ -3,8 +3,8 @@ import os
 if os.path.exists("env.py"):
     import env
 
-MONGO_URI = os.environ.get('MONGO_URI')
-DBS_NAME = "myTestDB"
+MONGODB_URI = os.environ.get("MONGO_URI")
+DBS_NAME = "mytestdb"
 COLLECTION_NAME = "myFirstMDB"
 
 
@@ -17,7 +17,7 @@ def mongo_connect(url):
         print("Could not connect to MongoDB: %s") % e
 
 
-conn = mongo_connect(MONGO_URI)
+conn = mongo_connect(MONGODB_URI)
 
 coll = conn[DBS_NAME][COLLECTION_NAME]
 
